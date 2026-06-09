@@ -14,8 +14,16 @@ section {
   justify-content: space-between;
   align-items: center;
   padding: 0 1rem;
-  font-family: Arial, Helvetica, sans-serif;
+  border-bottom: 3px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.7);
+  border-radius: 0 0 8px 8px;
   width: 100%;
+}
+
+h1 {
+  font-family: "Chelsea Market", system-ui;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .navLinks {
@@ -24,10 +32,12 @@ section {
   align-content: flex-end;
   justify-content: space-evenly;
 }
+
 a {
   color: white;
   transform: scaleY(2);
   text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
@@ -37,6 +47,10 @@ body {
   min-height: 100vh;
   background-color: black;
   align-items: center;
+  background-image:
+    linear-gradient(rgba(128, 128, 128, 0.15) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(128, 128, 128, 0.15) 1px, transparent 1px);
+  background-size: 20px 20px;
 }
 
 .photos {
@@ -50,6 +64,8 @@ article {
   display: flex;
   flex-direction: column;
   align-items: center;
+  border-radius: 8px;
+  padding: 10px;
 }
 
 .content {
@@ -65,12 +81,18 @@ article {
 }
 
 footer {
-  background-color: grey;
+  background-color: rgb(65, 64, 64);
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 10px 0;
+  box-shadow: 2px 10px 0 0 rgba(0, 0, 0, 0.7);
+  border-radius: 8px 8px 0 0;
+  border-top: 3px solid rgba(255, 255, 255, 0.2);
   width: 100%;
+  font-family: "Chelsea Market", system-ui;
+  font-weight: 400;
+  font-style: normal;
 }
 
 @media screen and (max-width: 768px) {
